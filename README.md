@@ -18,7 +18,7 @@ Wall-mounted button panel for triggering LightBurn laser cutter macros, using a 
 | Green (Start) | GP15 |
 | Red (Stop) | GP0 |
 | Yellow (Frame) | GP7 |
-| Blue (TBC) | GP3 |
+| Blue (TBC) | GP4 |
 | Black (TBC) | GP20 |
 | Toggle (centre) | GND |
 | Toggle (one outer pin) | GP12 |
@@ -33,15 +33,15 @@ Toggle: centre (common) → GND, outer pins → GP5 and GP6.
 
 Assign these in LightBurn under **Edit → Settings → Hotkeys / Macro Buttons**:
 
-| Shortcut | Action | GCode |
-|----------|--------|-------|
-| Ctrl+F1 | Start | — |
-| Ctrl+F2 | Stop | — |
-| Ctrl+F3 | Frame | — |
-| Ctrl+F4 | Blue (TBC) | — |
-| Ctrl+F5 | Black (TBC) | — |
-| Ctrl+F6 | Home | `G21 G28` |
-| Ctrl+F7 | Far corner | `G21 G0 X400 Y415` |
+| Shortcut | Button | Action |
+|----------|--------|--------|
+| Alt+S | Green | Start |
+| Ctrl+Esc | Red | Stop |
+| Ctrl+Shift+A | Yellow | Frame |
+| F1 | Blue | (unassigned) |
+| F2 | Black | (unassigned) |
+| Ctrl+H | Toggle ON | Home |
+| Ctrl+Shift+Alt+G | Toggle OFF | Move to far corner |
 
 ## Deploy
 
