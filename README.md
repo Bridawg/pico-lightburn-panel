@@ -37,11 +37,11 @@ Assign these in LightBurn under **Edit → Settings → Hotkeys / Macro Buttons*
 |----------|--------|--------|
 | Alt+S | Green | Start |
 | Ctrl+Esc | Red | Stop |
-| Ctrl+Shift+A | Yellow | Frame |
-| F1 | Blue | (unassigned) |
+| Ctrl+Shift+Alt+G | Yellow | Far corner |
+| Ctrl+Shift+A | Blue | Frame |
 | F2 | Black | (unassigned) |
-| Ctrl+H | Toggle ON | Home |
-| Ctrl+Shift+Alt+G | Toggle OFF | Move to far corner |
+| Ctrl+H | Toggle LOW | Home |
+| Ctrl+Shift+Alt+G | Toggle HIGH | Far corner |
 
 ## Deploy
 

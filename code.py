@@ -38,7 +38,7 @@ from adafruit_hid.keycode import Keycode as K
 
 # pin                 keys (tuple)                  # color : function
 BUTTON_1_PIN  = board.GP7
-BUTTON_1_KEYS = (K.CONTROL, K.SHIFT, K.A)           # YELLOW : Frame laser
+BUTTON_1_KEYS = (K.CONTROL, K.SHIFT, K.ALT, K.G)    # YELLOW : Far corner
 
 BUTTON_2_PIN  = board.GP15
 BUTTON_2_KEYS = (K.ALT, K.S)                        # GREEN  : Start laser
@@ -46,8 +46,8 @@ BUTTON_2_KEYS = (K.ALT, K.S)                        # GREEN  : Start laser
 BUTTON_3_PIN  = board.GP0
 BUTTON_3_KEYS = (K.CONTROL, K.ESCAPE)               # RED    : Stop laser
 
-BUTTON_4_PIN  = board.GP4
-BUTTON_4_KEYS = (K.F1,)                             # BLUE   : (unassigned)
+BUTTON_4_PIN  = board.GP3
+BUTTON_4_KEYS = (K.CONTROL, K.SHIFT, K.A)            # BLUE   : Frame laser
 
 BUTTON_5_PIN  = board.GP20
 BUTTON_5_KEYS = (K.F2,)                             # BLACK  : (unassigned)
