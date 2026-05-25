@@ -8,7 +8,7 @@ import time
 kbd = Keyboard(usb_hid.devices)
 
 # --- Button setup ---
-button_pins = [board.GP0, board.GP1, board.GP2, board.GP3, board.GP4]
+button_pins = [board.GP15, board.GP0, board.GP7, board.GP3, board.GP20]
 button_keys = [
     (Keycode.CONTROL, Keycode.F1),  # Green  - Start
     (Keycode.CONTROL, Keycode.F2),  # Red    - Stop
@@ -26,14 +26,10 @@ for pin in button_pins:
 
 button_states = [True] * len(buttons)
 
-# --- Toggle setup ---
-toggle_a = digitalio.DigitalInOut(board.GP5)  # Home side
-toggle_a.direction = digitalio.Direction.INPUT
-toggle_a.pull = digitalio.Pull.UP
-
-toggle_b = digitalio.DigitalInOut(board.GP6)  # Far corner side
-toggle_b.direction = digitalio.Direction.INPUT
-toggle_b.pull = digitalio.Pull.UP
+# --- Toggle setup (SPDT: centre to GND, one outer pin to GP12) ---
+toggle = digitalio.DigitalInOut(board.GP12)
+toggle.direction = digitalio.Direction.INPUT
+toggle.pull = digitalio.Pull.UP
 
 last_toggle = None
 
@@ -49,14 +45,9 @@ while True:
             button_states[i] = True
 
     # Toggle - fire on state change only
-    if not toggle_a.value:
-        toggle_state = "home"
-    elif not toggle_b.value:
-        toggle_state = "far"
-    else:
-        toggle_state = None
+    toggle_state = "home" if not toggle.value else "far"
 
-    if toggle_state and toggle_state != last_toggle:
+    if toggle_state != last_toggle:
         if toggle_state == "home":
             kbd.send(Keycode.CONTROL, Keycode.F6)   # Home macro
         else:
