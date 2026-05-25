@@ -15,15 +15,17 @@ Wall-mounted button panel for triggering LightBurn laser cutter macros, using a 
 
 | Component | GPIO |
 |-----------|------|
-| Green (Start) | GP0 |
-| Red (Stop) | GP1 |
-| Yellow (Frame) | GP2 |
+| Green (Start) | GP15 |
+| Red (Stop) | GP0 |
+| Yellow (Frame) | GP7 |
 | Blue (TBC) | GP3 |
-| Black (TBC) | GP4 |
-| Toggle → Home | GP5 |
-| Toggle → Far corner | GP6 |
+| Black (TBC) | GP20 |
+| Toggle (centre) | GND |
+| Toggle (one outer pin) | GP12 |
 | All button commons | GND |
 | LED | 330Ω → 3V3 OUT (pin 36) → GND |
+
+Toggle is SPDT: centre pin to GND, one outer pin to GP12. LOW = Home, HIGH = Far corner. Other outer pin unused.
 
 Toggle: centre (common) → GND, outer pins → GP5 and GP6.
 
