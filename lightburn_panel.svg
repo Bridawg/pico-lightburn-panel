@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="200mm" height="100mm" viewBox="0 0 200 100">
+  <!-- Outer frame -->
+  <rect x="0" y="0" width="200" height="100" fill="none" stroke="red" stroke-width="0.1"/>
+  <!-- Toggle (6mm hole) -->
+  <circle cx="50" cy="33" r="3" fill="none" stroke="red" stroke-width="0.1"/>
+  <!-- Yellow (Frame) 30mm -->
+  <circle cx="100" cy="33" r="15" fill="none" stroke="red" stroke-width="0.1"/>
+  <!-- Green (Start) 30mm -->
+  <circle cx="150" cy="33" r="15" fill="none" stroke="red" stroke-width="0.1"/>
+  <!-- Red (Stop) 30mm -->
+  <circle cx="50" cy="67" r="15" fill="none" stroke="red" stroke-width="0.1"/>
+  <!-- Blue 30mm -->
+  <circle cx="100" cy="67" r="15" fill="none" stroke="red" stroke-width="0.1"/>
+  <!-- Black 30mm -->
+  <circle cx="150" cy="67" r="15" fill="none" stroke="red" stroke-width="0.1"/>
+  <!-- Rib slot 1 at X=75mm (4mm wide, full height) -->
+  <rect x="73" y="0" width="4" height="100" fill="none" stroke="blue" stroke-width="0.1"/>
+  <!-- Rib slot 2 at X=125mm (4mm wide, full height) -->
+  <rect x="123" y="0" width="4" height="100" fill="none" stroke="blue" stroke-width="0.1"/>
+</svg>

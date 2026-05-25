@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 4 identical pieces: 2x sides, 2x ribs. All 92x40mm -->
+<svg xmlns="http://www.w3.org/2000/svg" width="200mm" height="100mm" viewBox="0 0 200 100">
+  <!-- Piece 1 (left side) -->
+  <rect x="0" y="0" width="92" height="40" fill="none" stroke="red" stroke-width="0.1"/>
+  <!-- LED hole 8mm diameter, centred on left side panel -->
+  <circle cx="46" cy="20" r="4" fill="none" stroke="red" stroke-width="0.1"/>
+  <!-- Piece 2 (right side) -->
+  <rect x="102" y="0" width="92" height="40" fill="none" stroke="red" stroke-width="0.1"/>
+  <!-- Piece 3 (rib 1) - 40mm wide x 20mm deep semicircle cutout on bottom edge -->
+  <path d="M 0,50 L 92,50 L 92,90 L 66,90 A 20,20 0 1 0 26,90 L 0,90 Z"
+        fill="none" stroke="red" stroke-width="0.1"/>
+  <!-- Piece 4 (rib 2) - same cutout -->
+  <path d="M 102,50 L 194,50 L 194,90 L 168,90 A 20,20 0 1 0 128,90 L 102,90 Z"
+        fill="none" stroke="red" stroke-width="0.1"/>
+</svg>

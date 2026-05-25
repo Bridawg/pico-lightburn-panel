@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="200mm" height="40mm" viewBox="0 0 200 40">
+  <!-- Outer frame -->
+  <rect x="0" y="0" width="200" height="40" fill="none" stroke="red" stroke-width="0.1"/>
+  <!-- Rib locating slots from top edge, 4mm wide x 5mm deep -->
+  <rect x="73" y="0" width="4" height="5" fill="none" stroke="red" stroke-width="0.1"/>
+  <rect x="123" y="0" width="4" height="5" fill="none" stroke="red" stroke-width="0.1"/>
+  <!-- USB cable cutout centred on bottom edge, 8mm wide x 6mm deep -->
+  <rect x="96" y="34" width="8" height="6" fill="none" stroke="red" stroke-width="0.1"/>
+</svg>

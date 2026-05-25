@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="200mm" height="100mm" viewBox="0 0 200 100">
+  <!-- Outer frame -->
+  <rect x="0" y="0" width="200" height="100" fill="none" stroke="red" stroke-width="0.1"/>
+  <!-- Left keyhole: 4mm circle + 2.5mm slot going up -->
+  <circle cx="40" cy="30" r="2" fill="none" stroke="red" stroke-width="0.1"/>
+  <rect x="38.75" y="20" width="2.5" height="10" fill="none" stroke="red" stroke-width="0.1"/>
+  <!-- Right keyhole -->
+  <circle cx="160" cy="30" r="2" fill="none" stroke="red" stroke-width="0.1"/>
+  <rect x="158.75" y="20" width="2.5" height="10" fill="none" stroke="red" stroke-width="0.1"/>
+</svg>
